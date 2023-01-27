@@ -1,0 +1,55 @@
+.general {
+    position: relative;
+    color: $white;
+    &::before {
+      content: '';
+      position: absolute;
+      border: 1px solid transparent;
+      left: 0;
+      top: 100%;
+      width: 0;
+      transition: 0.3s;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+        border-color: $white;
+      }
+    }
+}
+.anc {
+    position: relative;
+    padding: 16px 24px;
+    color: $white;
+    background-color: $light-red;
+    border-color: $white;
+    border: 1px solid;
+    border-radius: 3px;
+    font-size: 16px;
+    text-align: center;
+
+    &:hover {
+        color: $light-red;
+        background-color: transparent;
+    }
+}
+
+.anc-secondary {
+    color: $light-red;
+    border-color: $light-red;
+    background-color: $white;
+    &:hover {
+        color: $white;
+        background-color: $light-red;
+    }
+}
+
+.anc-white {
+    color: $white;
+    background-color: transparent;
+    border-color: $white;
+    &:hover {
+        color: $light-red;
+        background-color: $white;
+    }
+}

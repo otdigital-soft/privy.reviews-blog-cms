@@ -1,0 +1,103 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+/**
+ * Set up a decent box model on the root element
+ */
+html {
+  box-sizing: border-box;
+  -webkit-overflow-scrolling: touch;
+  font-family: "home";
+  font-weight: 500;
+  font-size: 17px;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/**
+ * Make all elements from the DOM inherit from the parent box-sizing
+ * Since `*` has a specificity of 0, it does not override the `html` value
+ * making all elements inheriting from the root box-sizing value
+ * See: https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  margin: 0;
+  /* Make sure images are scaled correctly. */
+  max-width: 100%;
+  /* Adhere to container width. */
+}
+
+/**
+ * Basic styles for links
+ */
+a {
+  color: $white;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+p {
+  color: $main-color;
+  line-height: 25px;
+  margin: 0;
+}
+
+.text-upper {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.container {
+  margin: auto;
+  max-width: 1320px;
+  @include mq(desktop-wide) {
+    max-width: 1140px;
+  }
+  @include mq(desktop) {
+    max-width: 960px;
+  }
+  @include mq(tablet-wide) {
+    max-width: 720px;
+  }
+  @include mq(tablet) {
+    max-width: 540px;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+li {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $main-color;
+  margin: 0;
+  padding: 0;
+}

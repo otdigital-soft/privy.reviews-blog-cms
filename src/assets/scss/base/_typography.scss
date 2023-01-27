@@ -1,0 +1,48 @@
+/**
+ * Basic typography style for copy text
+ */
+
+// h1,
+// .h1 {
+//   @include typography(58px, 64px, 177px, 176px, 900);
+// }
+
+
+// h3 {
+//   font-size: 67.77px;
+
+//   @include mq("tablet") {
+//     font-size: 40px;
+//   }
+// }
+
+// h4,
+// .h4 {
+//   @include typography(24px, 32px, 42px, 48px, 700, $f-text);
+//   text-transform: uppercase;
+//   letter-spacing: 0.05em;
+// }
+
+// h6 {
+//   font-size: 16px;
+
+//   // @include mq("tablet") {
+//   //   font-size: 12px;
+//   // }
+// }
+
+h5 {
+  font-size: 12px;
+}
+
+h4 {
+  font-size: 17px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 36px;
+}

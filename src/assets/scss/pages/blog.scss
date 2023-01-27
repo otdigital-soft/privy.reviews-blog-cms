@@ -1,0 +1,49 @@
+.featured-posts {
+    padding: 140px 0 100px;
+    background-color: $main-color;
+    .container {
+        padding: 0 12px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .featured-post {
+        width: 50%;
+        @include mq(tablet-wide) {
+            width: 100%;
+        }
+        &:last-child {
+            padding-left: 100px;
+            @include mq(tablet-wide) {
+                padding-left: 0;
+                margin-top: 50px;
+            }
+        }
+    }
+}
+
+.latest-posts {
+    padding: 80px 0;
+    &__bar {
+        position: relative;
+        &::before {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 50%;
+            width: calc(50% - (120px / 2));
+            border: 1px solid;
+            border-color: $black transparent transparent transparent;
+        }
+        &::after {
+            position: absolute;
+            content: "";
+            right: 0;
+            top: 50%;
+            width: calc(50% - (120px / 2));
+            border: 1px solid;
+            border-color: $black transparent transparent transparent;
+        }
+    }
+}

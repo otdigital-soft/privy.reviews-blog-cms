@@ -1,0 +1,73 @@
+.news {
+    padding: 104px 0 80px 0;
+    &-title {
+        margin-bottom: 64px;
+        @include mq("tablet") {
+            margin-bottom: 27px;
+        }
+    }
+    &-card {
+        margin-bottom: 32px;
+        &:last-child {
+            margin-bottom: none;
+        }
+    }
+    .slick-dots {
+        @include mq("tablet") {
+            display: none !important;
+        }
+        li {
+            width: 16px;
+            height: 16px;
+            border: 1px solid $light-red;
+            border-radius: 50%;
+            button {
+                &::before {
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 9px;
+                    height: 9px;
+                    background: $light-red;
+                    color: none;
+                    border-radius: 50%;
+                    opacity: 0;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    .slick-slide {
+        margin: 0px 10px;
+    }
+    .news-carousel {
+        padding-bottom: 70px;
+        .slick-prev {
+            left: calc(50% - 150px);
+            top: 100%;
+            transform: translate(-100%, -50%);
+            @include mq("tablet") {
+                left: calc(50% - 100px);
+            }
+            &:before {
+                font-size: 50px;
+                color: $light-red;
+            }
+        }
+        .slick-next {
+            left: calc(50% + 150px);
+            top: 100%;
+            transform: translate(-100%, -50%);
+            @include mq("tablet") {
+                left: calc(50% + 100px);
+            }
+            &:before {
+                font-size: 50px;
+                color: $light-red;
+            }
+        }
+    }
+    &-more {
+        margin-top: 100px;
+    }
+}

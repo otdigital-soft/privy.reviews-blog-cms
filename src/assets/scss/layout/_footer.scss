@@ -1,0 +1,89 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+.footer {
+    padding: 30px 40px;
+    background-color: $sky;
+    transition: 0.6s;
+    .container {
+        max-width: 1360px;
+    }
+    &-top {}
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        @include mq(tablet-wide) {
+            justify-content: flex-start;
+        }
+        
+        &__item {
+            width: 15%;
+            margin: 10px 0;
+            @include mq(tablet-wide) {
+                width: 30%;
+            }
+            @include mq(tablet) {
+                width: 100%;
+            }
+            .list-items {
+                margin: 0;
+            }
+            .list-item {
+                padding: 8px 0;
+            }
+
+            .language {
+                padding: 10px;
+                background-color: $blue;
+                width: 100%;
+                color: $white;
+                border-radius: 10px;
+                border: none;
+                outline: none;
+            }
+        }
+        
+        &__heading {
+            margin-bottom: 20px;
+            color: $black;
+        }
+    }
+    
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 80px;
+    }
+
+    &-menu {
+        display: flex;
+        justify-content: space-between;
+        @include mq(tablet) {
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        
+        &__item {
+            padding: 10px;
+            .list-items {
+                margin: 0;
+            }
+        }
+    }
+
+    &-brand {
+        @include mq(tablet) {
+            display: none;
+        }
+    }
+
+    &-logo {
+        
+        img {
+            width: 96px;
+        }
+    }
+}

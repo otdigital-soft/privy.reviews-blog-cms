@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// This file contains all @font-face declarations, if any.
+// -----------------------------------------------------------------------------
+
+// Plus Jakarta Sans
+@font-face {
+    font-family: 'home';
+    src: fonts('CANELA-BLACK.TTF');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'home';
+    src: fonts('CANELA-BOLD.TTF');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+// Para Supreme
+@font-face {
+    font-family: 'home';
+    src: fonts('CANELA-REGULAR.TTF');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

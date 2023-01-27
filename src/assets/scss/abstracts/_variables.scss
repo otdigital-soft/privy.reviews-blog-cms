@@ -1,0 +1,110 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// Regular font family
+/// @type List
+$f-heading: 'Para Supreme', 'Arial', sans-serif !default;
+$f-text: 'Plus Jakarta Sans', 'Arial', sans-serif !default;
+
+/// Copy text color
+
+///Main color
+///@type color
+$main-color: #FFB8AA !default;
+
+/// @type Color
+$text-color: #000 !default;
+$heading-color: #003865 !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: rgb(229, 0, 80) !default;
+
+/// Light grey
+/// @type Color
+$adver-color: #9DB0AC !default;
+
+/// Light grey
+/// @type Color
+/// 
+/// 
+$light-grey: #a5a5a5 !default;
+
+$gray: #888;
+
+/// Medium grey
+/// @type Color
+$mid-grey: rgb(153, 153, 153) !default;
+
+/// Dark grey
+/// @type Color
+$dark-grey: rgb(68, 68, 68) !default;
+
+/// White
+/// @type Color
+$white: #FFFFFF !default;
+
+///light-red
+/// @type Color
+$light-red: #E56A54 !default;
+
+/// black
+/// @type Color
+$black: #000000 !default;
+
+/// Yellow
+/// @type Color
+$yellow: #FFC658 !default;
+
+/// Blue
+/// @type Color
+$blue: #80CAE6 !default;
+
+/// Green 
+/// @type Color
+$green: #9DB0AC !default;
+
+/// Pink
+/// @type Color
+$pink: #E9CECE !default;
+
+/// Sky
+/// @type Color
+$sky: #e7f3f9 !default;
+
+
+
+/// Sky
+/// @type Color
+$sky: #48A9C5 !default;
+
+/// Container's maximum width
+// / @type Length
+// $max-width: 1300px !default;
+
+/// Breakpoints map
+/// @prop {String} keys - Keys are identifiers mapped to a given length
+/// @prop {Map} values - Values are actual breakpoints expressed in pixels
+$breakpoints: (
+  "phone-xsmall": 320px,
+  "phone-s21": 360px,
+  "phone-small": 375px,
+  "phone": 425px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "tablet-wide": 992px,
+  "desktop-small": 1024px,
+  "desktop": 1200px,
+  "desktop-wide": 1400px,
+  "desktop-ultra": 1599px,
+) !default;
+
+
+/// Relative or absolute URL where all assets are served from
+/// @type String
+/// @example scss - When using a CDN
+///   $base-url: 'http://cdn.example.com/assets/';
+$base-url: '/assets/' !default;

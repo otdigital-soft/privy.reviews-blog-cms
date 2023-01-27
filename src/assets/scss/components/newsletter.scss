@@ -1,0 +1,37 @@
+.newsletter {
+    display: flex;
+    flex-direction: column;
+    padding: 55px 0 41px 0;
+    background-color: $yellow;
+    &-title {
+        .secondary {
+            color: $white;
+        }
+    }
+    &-signup {
+        display: flex;
+        margin-top: 96px;
+        width: 75%;
+        @include mq("tablet") {
+            display: block;
+            width: 100%;
+        }
+        .email {
+            width: 100%;
+            padding: 12px 0;
+            background-color: transparent;
+            color: $main-color;
+            border-color: transparent transparent rgba(255,255,255,0.5) transparent;
+            outline: none;
+            
+            &::placeholder {
+                color: $main-color;
+            }
+        }
+        .btn {
+            @include mq("tablet") {
+                margin-top: 52px;
+            }
+        }
+    }
+}

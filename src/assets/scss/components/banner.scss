@@ -1,0 +1,64 @@
+.banner {
+    .container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        min-height: 100vh;
+        @include mq("desktop-small") {
+            flex-direction: column-reverse;
+            height: 100%;
+            padding: 97px 20px 50px 20px;
+        }
+    }
+    &-content {
+        width: 100%;
+        @include mq("desktop-small") {
+            margin-bottom: 70px;
+        }
+        .title-sm {
+            position: absolute;
+            left: 20px;
+            top: 100px;
+        }
+        &__title {
+            width: 100%;
+            color: $main-color;
+        }
+
+        &__desc {
+            margin-top: 32px;
+            p {
+                font-size: 16px;
+            }
+        }
+
+        &__buttons {
+            margin-top: 50px;
+            @include mq("desktop-small") {
+                display: flex;
+            }
+            .anc {
+                width: 100%;
+                &:first-child {
+                    margin-right: 16px;
+                }
+            }
+        }
+    }
+    &-image {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+        width: 100%;
+        @include mq("tablet") {
+            margin-top: 50px;
+            width: 70%;
+        }
+    }
+}
+
+.banner-sm {
+    .banner-left__desc {
+        margin-top: 110px;
+    }
+}

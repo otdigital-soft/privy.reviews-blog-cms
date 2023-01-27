@@ -1,0 +1,60 @@
+{
+    "featuredposts": [
+        {
+            "date": {
+                "dateImgUrl": "processed1.jpg",
+                "day": "15",
+                "month": "Feb",
+                "year": "2022"
+            },
+            "author": "Vanessa F.",
+            "title": "How to Market Your Music as a Creator in 2023",
+            "description": "A solid internet presence is essential for musicians and other music creators in order to market thei...",
+            "imgSmUrl": "post2.jpg",
+            "feedbacks": [
+                {
+                    "author": "Vanessa F.",
+                    "date": "12 Jan 2023",
+                    "description": "A Deep Dive into The Creator Economy Landscape",
+                    "feedImgUrl": "processed1.jpg"
+                },
+                {
+                    "author": "Vanessa F.",
+                    "date": "12 Jan 2023",
+                    "description": "A Deep Dive into The Creator Economy Landscape",
+                    "feedImgUrl": "processed1.jpg"
+                }
+            ]
+        },
+        {
+            "date": {
+                "dateImgUrl": "processed1.jpg",
+                "day": "24",
+                "month": "Jan",
+                "year": "2023"
+            },
+            "author": "Vanessa F.",
+            "title": "How Privy Empowers Micro-Influencers to Stand Out in A Crowded Market",
+            "subtitle": "How Privy Empowers Micro-Influencers to Stand Out in A Crowded Market",
+            "description": "With the rise of the internet and social sharing technology, launching a career as a content creator or inf...",
+            "readmore": true,
+            "imgUrl": "post1.jpg"
+        }
+    ],
+    "posts": [
+        {
+            "author": "Vanessa F.",
+            "date": "25 Apr 2022",
+            "title": "Twitch Content Creator Reviews",
+            "imgUrl": "post1.jpg",
+            "description": "Are you looking to get more feedback on your content, build brand credibility and improve your marketing performance as a"
+        },
+        {
+            "author": "Vanessa F.",
+            "date": "25 Apr 2022",
+            "title": "Twitch Content Creator Reviews",
+            "imgUrl": "post1.jpg",
+            "description": "Are you looking to get more feedback on your content, build brand credibility and improve your marketing performance as a"
+        }
+    ]
+}
