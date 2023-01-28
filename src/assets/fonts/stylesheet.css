@@ -1,8 +1,3 @@
-// -----------------------------------------------------------------------------
-// This file contains all @font-face declarations, if any.
-// -----------------------------------------------------------------------------
-
-// Plus Jakarta Sans
 @font-face {
     font-family: 'Canela';
     src: url('Canela-Bold.woff2') format('woff2'),
