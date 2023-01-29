@@ -1,9 +1,6 @@
 import * as React from "react"
 
-import Blog from './blog'
-
-import * as styles from "../components/index.module.css"
-
+import Blog from "./blog"
 
 const IndexPage = () => (
   <React.Fragment>
@@ -16,6 +13,5 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-
 
 export default IndexPage
