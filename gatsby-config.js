@@ -7,6 +7,9 @@
 /**
  * @type {import('gatsby').GatsbyConfig}
  */
+
+require("dotenv").config({ path: `.env.development` })
+
 module.exports = {
   siteMetadata: {
     title: `Gatsby Default Starter`,
@@ -40,5 +43,15 @@ module.exports = {
       },
     },
     `gatsby-plugin-sass`,
+    {
+      resolve: "gatsby-source-strapi",
+      options: {
+        apiURL: process.env.STRAPI_API_URL,
+        accessToken: process.env.STRAPI_TOKEN,
+        collectionTypes: ["blog"],
+        singleTypes: [],
+        queryLimit: 1000,
+      },
+    },
   ],
 }
