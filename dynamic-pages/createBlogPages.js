@@ -10,6 +10,12 @@ const createBlogPages = async ({ createPage, graphql, reporter }) => {
           Slug
           Title
           Date
+          FeaturedImage {
+            url
+          }
+          Avatar {
+            url
+          }
           Content {
             data {
               Content
@@ -34,7 +40,8 @@ const createBlogPages = async ({ createPage, graphql, reporter }) => {
       context: {
         slug: blog.Slug,
         title: blog.Title,
-        body: blog.Content.data.Content,
+        featuredImage: blog.FeaturedImage?.url,
+        body: blog.Content?.data?.Content,
         createdAt: blog?.Date,
       },
     })

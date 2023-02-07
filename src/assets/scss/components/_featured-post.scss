@@ -34,6 +34,7 @@
 
     &__author {
         color: $white;
+        padding: 10px 0;
         span {
             color: $black;
         }
@@ -92,8 +93,7 @@
         margin-top: 25px;
         img {
             width: 100%;
-            max-width: 650px;
-            max-height: 450px;
+            max-width: 1100px;
         }
     }
     

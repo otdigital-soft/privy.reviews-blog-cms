@@ -1,5 +1,6 @@
 import React from "react"
 import Burger from "../components/burger"
+import { Logo } from "../utils/imgImport"
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
@@ -11,7 +12,7 @@ function Header() {
         <div className="container">
           <div className="header-brand">
             <a href="/" className="header-brand__logo">
-              <img src="/assets/images/logo.png" alt="logo"></img>
+              <img src={Logo} alt="logo"></img>
             </a>
           </div>
           <div className={`header-nav ${burger ? "phone-menu" : ""}`}>
@@ -23,28 +24,28 @@ function Header() {
               </li>
               <li className="header-nav__item">
                 <a href="#" className="header-nav__link">
-                  Categories
+                  What's New
                 </a>
               </li>
               <li className="header-nav__item">
                 <a href="#" className="header-nav__link">
-                  About us
+                  Commentary
                 </a>
               </li>
               <li className="header-nav__item">
                 <a href="#" className="header-nav__link">
-                  Blog
+                  Spotlight
                 </a>
               </li>
               <li className="header-nav__item">
                 <a href="#" className="header-nav__link">
-                  Login
+                  Archive
                 </a>
               </li>
             </ul>
             <div className="header-nav__creator">
               <a href="#" className="header-nav__btn header-nav__link">
-                For creators
+                Sign Up
               </a>
             </div>
           </div>

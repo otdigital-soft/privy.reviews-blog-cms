@@ -1,0 +1,43 @@
+.blog-hero {
+    background: url("../images/blog-hero-bg.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &__img {
+        position: absolute;
+        z-index: 1;
+        width: 63rem;
+        top: 15.5rem;
+        transform: rotate(7.5deg);
+    }
+
+    .container {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+    &__head {
+        width: 100%;
+        h1 {
+            color: #fff;
+        }
+    }
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        .blog-author {
+            &__img {
+
+            }
+            &__detail {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        .blog-social {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+    }
+}

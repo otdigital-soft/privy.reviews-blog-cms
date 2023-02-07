@@ -1,17 +1,17 @@
 .post {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 30px 0;
-    border-bottom: 1px solid $light-grey;
+    padding: 0;
 
     &:last-child {
         border: none;
     }
 
     &-heading {
-        padding: 50px 15px;
-        width: 33%;
+        padding: 10px 0;
+        width: 100%;
 
         @include mq(tablet-wide) {
             width: 100%;
@@ -35,15 +35,15 @@
 
     &-image {
         padding: 0 15px;
-        width: 33%;
+        width: 100%;
         @include mq(tablet-wide) {
             width: 100%;
         }
     }
 
     &-content {
-        padding: 50px 0;
-        width: 33%;
+        padding: 10px 0;
+        width: 100%;
 
         @include mq(tablet-wide) {
             width: 100%;

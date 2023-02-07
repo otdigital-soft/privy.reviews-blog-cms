@@ -45,20 +45,18 @@ const Blog = () => {
       <section className="featured-posts">
         <div className="container">
           <MainFeaturedPost post={currentItems[0]} />
-          <div className="featured-post">
-            <RightFeaturedPost post={currentItems[1]} />
-            <SubFeaturedPosts posts={[currentItems[2], currentItems[3]]} />
-          </div>
         </div>
       </section>
       <section className="latest-posts">
         <div className="container">
-          <div className="latest-posts__bar text-center text-upper">
+          {/* <div className="latest-posts__bar text-center text-upper">
             latest post
+          </div> */}
+          <div className="posts-wrapper">
+            {blogList.map((item, index) => (
+              <Post post={item} key={index} />
+            ))}
           </div>
-          {blogList.map((item, index) => (
-            <Post post={item} key={index} />
-          ))}
         </div>
       </section>
       <Footer />
