@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
 import Burger from "../components/burger"
 import { Logo } from "../utils/imgImport"
 
@@ -6,6 +7,21 @@ import { Logo } from "../utils/imgImport"
 
 function Header() {
   const [burger, setBurger] = React.useState(false)
+  const { allStrapiCategory } = useStaticQuery(graphql`
+    query CategoryList {
+      allStrapiCategory {
+        nodes {
+          id
+          Title
+          Slug
+        }
+      }
+    }
+  `)
+
+  const categoryList = allStrapiCategory.nodes
+  console.log(categoryList)
+
   return (
     <React.Fragment>
       <section className={`header ${burger ? "is-opened" : ""}`}>
@@ -22,26 +38,13 @@ function Header() {
                   Home
                 </a>
               </li>
-              <li className="header-nav__item">
-                <a href="#" className="header-nav__link">
-                  What's New
-                </a>
-              </li>
-              <li className="header-nav__item">
-                <a href="#" className="header-nav__link">
-                  Commentary
-                </a>
-              </li>
-              <li className="header-nav__item">
-                <a href="#" className="header-nav__link">
-                  Spotlight
-                </a>
-              </li>
-              <li className="header-nav__item">
-                <a href="#" className="header-nav__link">
-                  Archive
-                </a>
-              </li>
+              {categoryList.map((item, idx) => (
+                <li className="header-nav__item" key={item.id}>
+                  <a href={item.Slug} className="header-nav__link">
+                    {item.Title}
+                  </a>
+                </li>
+              ))}
             </ul>
             <div className="header-nav__creator">
               <a href="#" className="header-nav__btn header-nav__link">
