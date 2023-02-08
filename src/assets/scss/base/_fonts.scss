@@ -29,4 +29,33 @@
     font-style: normal;
     font-display: swap;
 }
+/* Font-Family: Garnett */
+@font-face {
+    font-family: 'Garnett';
+    src: url("../fonts/Garnett-Regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Garnett';
+    src: url("../fonts/Garnett-Bold.woff") format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Garnett';
+    src: url("../fonts/Garnett-Light.woff") format('woff');
+    font-weight: lighter;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Garnett';
+    src: url("../fonts/Garnett-Medium.woff") format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
 

@@ -14,12 +14,12 @@ function FeaturedPostMain({ post }) {
       ) : null}
       <div className="featured-post-content">
         <div className="featured-post__main">
-          <h5 className="featured-post__author">
+          <p className="featured-post__author">
             <span>{post.Author} | </span>
             <span>{post.Date}</span>
-          </h5>
+          </p>
           {post.Title ? (
-            <h2 className="featured-post__title">{post.Title}</h2>
+            <h3 className="featured-post__title">{post.Title}</h3>
           ) : null}
           {post.Content?.data?.Content ? (
             <Content text={post.Content.data.Content} limit={150} />

@@ -17,7 +17,7 @@
     width: 25px;
     height: 2px;
     display: block;
-    background: $white;
+    background: $black;
     transition: all .3s ease-in-out;
 
     &::before,
@@ -27,7 +27,7 @@
       right: 0;
       height: 2px;
       display: block;
-      background: $white;
+      background: $black;
       content: '';
       transition: all .3s ease-in-out;
     }

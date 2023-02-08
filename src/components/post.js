@@ -15,7 +15,7 @@ const Post = ({ post }) => {
             &nbsp;|&nbsp;<span className="author-date">{post.Date}</span>
           </p>
         </div>
-        <h2 className="post-heading__title">{post.Title}</h2>
+        <h3 className="post-heading__title">{post.Title}</h3>
       </div>
       <div className="post-content">
         <Content text={post.Content?.data?.Content} limit={200} />

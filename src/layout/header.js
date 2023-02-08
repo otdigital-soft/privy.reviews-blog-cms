@@ -46,11 +46,9 @@ function Header() {
                 </li>
               ))}
             </ul>
-            <div className="header-nav__creator">
-              <a href="#" className="header-nav__btn header-nav__link">
-                Sign Up
-              </a>
-            </div>
+          </div>
+          <div className="nav-signup">
+            <button className="nav-signup__btn">Sign Up</button>
           </div>
           <Burger open={burger} setOpen={setBurger} />
         </div>

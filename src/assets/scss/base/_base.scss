@@ -8,14 +8,14 @@
 html {
   box-sizing: border-box;
   -webkit-overflow-scrolling: touch;
-  font-family: "home";
-  font-weight: 500;
-  font-size: 17px;
 }
 
 body {
   max-width: 100%;
   overflow-x: hidden;
+  font-family: "Garnett", sans-serif;
+  font-weight: normal;
+  font-size: 17px;
 }
 
 /**
@@ -75,10 +75,10 @@ p {
     max-width: 960px;
   }
   @include mq(tablet-wide) {
-    max-width: 720px;
+    max-width: 768px;
   }
   @include mq(tablet) {
-    max-width: 540px;
+    max-width: 768px;
   }
 }
 
