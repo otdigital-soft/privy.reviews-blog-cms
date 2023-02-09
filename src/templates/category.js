@@ -1,30 +1,38 @@
 import React, { useState } from "react"
-import { useStaticQuery, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import MainFeaturedPost from "../components/blog/MainFeaturedPost"
 import Post from "../components/post"
 import Layout from "../layout/layout"
 
 const CategoryTemplate = ({ pageContext, data }) => {
-  const blogList = data.allStrapiBlog.nodes
+  const blogList = data.allStrapiBlog.nodes ?? []
+
   const [currentItems, setCurrentItems] = useState(blogList)
+  console.log(blogList, currentItems)
   return (
     <Layout>
-      <React.Fragment>
-        <section className="featured-posts">
-          <div className="container">
-            <MainFeaturedPost post={currentItems[0]} />
-          </div>
-        </section>
-        <section className="latest-posts">
-          <div className="container">
-            <div className="posts-wrapper">
-              {currentItems.map((item, index) => (
-                <Post post={item} key={index} />
-              ))}
+      {currentItems.length > 0 ? (
+        <>
+          <section className="featured-posts">
+            <div className="container">
+              <MainFeaturedPost post={currentItems[0]} />
             </div>
-          </div>
-        </section>
-      </React.Fragment>
+          </section>
+          <section className="latest-posts">
+            <div className="container">
+              <div className="posts-wrapper">
+                {currentItems.map((item, index) => (
+                  <Post post={item} key={index} />
+                ))}
+              </div>
+            </div>
+          </section>
+        </>
+      ) : (
+        <div className="no-blogs">
+          <p>No blogs</p>
+        </div>
+      )}
     </Layout>
   )
 }

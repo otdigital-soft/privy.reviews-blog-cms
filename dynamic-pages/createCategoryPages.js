@@ -21,8 +21,6 @@ const createCategoryPages = async ({ createPage, graphql, reporter }) => {
   }
 
   const categories = query.data.allStrapiCategory.nodes
-  console.log("categories")
-  console.log(categories)
 
   categories.forEach(category => {
     createPage({
