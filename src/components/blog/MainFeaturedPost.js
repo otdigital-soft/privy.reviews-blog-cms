@@ -7,7 +7,7 @@ function FeaturedPostMain({ post }) {
   console.log("main post ", post)
   return (
     <div className="featured-post">
-      {post.FeaturedImage.url ? (
+      {post.FeaturedImage?.url ? (
         <div className="featured-post-image">
           <Image src={post.FeaturedImage.url} alt="post image" />
         </div>

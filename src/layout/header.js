@@ -20,7 +20,6 @@ function Header() {
   `)
 
   const categoryList = allStrapiCategory.nodes
-  console.log(categoryList)
 
   return (
     <React.Fragment>

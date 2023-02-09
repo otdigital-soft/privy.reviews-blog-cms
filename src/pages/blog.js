@@ -1,12 +1,9 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
 import { useStaticQuery, graphql, Link } from "gatsby"
 import Header from "../layout/header"
 import Footer from "../layout/footer"
 import MainFeaturedPost from "../components/blog/MainFeaturedPost"
-import RightFeaturedPost from "../components/blog/RightFeaturedPost"
-import SubFeaturedPosts from "../components/blog/SubFeaturedPosts"
 import Post from "../components/post"
-import data from "../data/data.json"
 
 const Blog = () => {
   const { allStrapiBlog } = useStaticQuery(graphql`
