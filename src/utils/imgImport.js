@@ -1,3 +1,3 @@
-import logo from "../assets/images/logo.png"
+import logo from "../assets/images/logo/logo.png"
 
 export const Logo = logo
