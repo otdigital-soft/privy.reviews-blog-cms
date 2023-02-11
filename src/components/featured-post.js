@@ -26,7 +26,7 @@ function FeaturedPost({ props }) {
             </span>
           </h5>
           {props.info.title ? (
-            <h2 className="featured-post__title">{props.info.title}</h2>
+            <h3 className="featured-post__title">{props.info.title}</h3>
           ) : null}
           {props.info.subtitle ? (
             <h4 className="featured-post__subtitle">{props.info.subtitle}</h4>
