@@ -6,8 +6,8 @@ import MainFeaturedPost from "../components/blog/MainFeaturedPost"
 import Post from "../components/post"
 
 const Blog = () => {
-  const { allStrapiBlog } = useStaticQuery(graphql`
-    query BlogList {
+  const data = useStaticQuery(graphql`
+    query BlogQuery {
       allStrapiBlog {
         nodes {
           id
@@ -18,7 +18,6 @@ const Blog = () => {
               Content
             }
           }
-
           Date
           Slug
           FeaturedImage {
@@ -32,7 +31,7 @@ const Blog = () => {
     }
   `)
 
-  const blogList = allStrapiBlog.nodes
+  const blogList = data?.allStrapiBlog?.nodes
 
   const [currentItems, setCurrentItems] = useState(blogList)
 

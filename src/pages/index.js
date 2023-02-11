@@ -4,7 +4,7 @@ import Blog from "./blog"
 
 const IndexPage = () => (
   <React.Fragment>
-    <section className="main">Home Page</section>
+    <Blog />
   </React.Fragment>
 )
 
