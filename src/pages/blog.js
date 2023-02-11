@@ -47,7 +47,7 @@ const Blog = () => {
       <section className="latest-posts">
         <div className="container">
           <div className="posts-wrapper">
-            {blogList.map((item, index) => (
+            {currentItems.map((item, index) => (
               <Post post={item} key={index} />
             ))}
           </div>
