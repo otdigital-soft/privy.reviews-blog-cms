@@ -28,8 +28,10 @@
     }
 
     &-nav {
+        width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        text-align: center;
         transition: 0.6s;
         @include mq(tablet-wide) {
             position: absolute;

@@ -33,13 +33,13 @@ function Header() {
           <div className={`header-nav ${burger ? "phone-menu" : ""}`}>
             <ul className={`header-nav__menu ${burger ? "phone" : ""}`}>
               <li className="header-nav__item">
-                <a href="#" className="header-nav__link">
+                <a href="/" className="header-nav__link">
                   Home
                 </a>
               </li>
               {categoryList.map((item, idx) => (
                 <li className="header-nav__item" key={item.id}>
-                  <a href={item.Slug} className="header-nav__link">
+                  <a href={`/${item.Slug}`} className="header-nav__link">
                     {item.Title}
                   </a>
                 </li>

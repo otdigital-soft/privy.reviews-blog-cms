@@ -7,6 +7,7 @@ import {
   FaYoutube,
   FaBomb,
 } from "react-icons/fa"
+import { FooterLogo } from "../utils/imgImport"
 
 function Footer() {
   return (
@@ -145,10 +146,7 @@ function Footer() {
           <div className="footer-bottom">
             <div className="footer-brand">
               <a href="#" className="footer-logo">
-                <img
-                  src="/assets/images/logo-footer.png"
-                  alt="PrivyReviews Logo"
-                />
+                <img src={FooterLogo} alt="PrivyReviews Logo" />
               </a>
             </div>
             <ul className="footer-menu">
